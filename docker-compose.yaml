@@ -1,0 +1,10 @@
+services:
+  ducks-database:
+    image: postgres:alpine
+    container_name: inventory-management-spring-database
+    ports:
+      - "6003:5432"
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: inventory-management-spring-2024
